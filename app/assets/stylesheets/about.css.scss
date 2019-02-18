@@ -1,0 +1,38 @@
+#nav {
+  height: 0px;
+  background: blue;
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  transition: all ease .5s;
+}
+
+#logo {
+  color: #fff;
+  padding: 20px;
+  font-size: 18px;
+  transition: all ease .5s;
+}
+
+
+#hero {
+  height: 50px;
+  width: 100%;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#nav.shrink {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  z-index: 1;
+  transition: all ease .5s;
+}
+
+#nav.shrink #logo {
+  transition: all ease .5s;
+}
