@@ -1,6 +1,7 @@
 class User < ApplicationRecord
 
 	has_many :articles, dependent: :destroy #destroy all articles created by the user if the user is removed
+	has_one :profile
 
 	before_save { self.email = email.downcase }	
 	validates :username, presence:true, uniqueness: 
